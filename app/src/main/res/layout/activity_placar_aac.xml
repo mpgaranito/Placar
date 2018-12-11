@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Time A"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time B"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeA"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeA" />
+
+    <TextView
+        android:id="@+id/placarTimeA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        android:textSize="76sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/placarTimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeA" />
+
+    <TextView
+        android:id="@+id/placarTimeB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="76sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/placarTimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/placarTimeA"
+        app:layout_constraintTop_toTopOf="@+id/placarTimeA" />
+
+    <Button
+        android:id="@+id/bt3pontostimeA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="3 Pontos"
+        app:layout_constraintEnd_toStartOf="@+id/bt3pontostimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placarTimeA" />
+
+    <Button
+        android:id="@+id/bt3pontostimeB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:text="3 Pontos"
+        app:layout_constraintBottom_toBottomOf="@+id/bt3pontostimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt3pontostimeA"
+        app:layout_constraintTop_toTopOf="@+id/bt3pontostimeA" />
+
+    <Button
+        android:id="@+id/bt2pontostimeA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="2 Pontos"
+        app:layout_constraintEnd_toStartOf="@+id/bt2pontostimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt3pontostimeA" />
+
+    <Button
+        android:id="@+id/bt2pontostimeB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:text="2 Pontos"
+        app:layout_constraintBottom_toBottomOf="@+id/bt2pontostimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt2pontostimeA"
+        app:layout_constraintTop_toTopOf="@+id/bt2pontostimeA" />
+
+    <Button
+        android:id="@+id/bt1pontostimeA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="1 Ponto"
+        app:layout_constraintEnd_toStartOf="@+id/bt1pontostimeB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt2pontostimeA" />
+
+    <Button
+        android:id="@+id/bt1pontostimeB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:text="1 Ponto"
+        app:layout_constraintBottom_toBottomOf="@+id/bt1pontostimeA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt1pontostimeA"
+        app:layout_constraintTop_toTopOf="@+id/bt1pontostimeA" />
+
+    <Button
+        android:id="@+id/btReiniciar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Reiniciar"
+        app:layout_constraintEnd_toEndOf="@+id/bt1pontostimeB"
+        app:layout_constraintStart_toStartOf="@+id/bt1pontostimeA"
+        app:layout_constraintTop_toBottomOf="@+id/bt1pontostimeA" />
+</android.support.constraint.ConstraintLayout>
